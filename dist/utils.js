@@ -53,6 +53,9 @@ export const filterJson = (json1, json2) => {
         else if (json2[key] == null) {
             json[key] = json1[key];
         }
+        else if (json2[key] == "") {
+            json[key] = json1[key];
+        }
     }
     return json;
 };
